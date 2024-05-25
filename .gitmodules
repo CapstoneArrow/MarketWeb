@@ -1,0 +1,3 @@
+[submodule "src/User"]
+	path = src/User
+	url = https://github.com/CapstoneArrow/market_django.git

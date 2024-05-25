@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import "./marketmore.css";
 import Main from "../../components/page/Main";
-import ChuncheonMarketMap from "./ChuncheonMarketMap";
-import GanseongMarketMap from './GansungMarketMap';
+import MarketMap from "./MarketMap"; // MarketMap 컴포넌트를 가져옵니다.
+import { MarketData } from './MarketData'; // MarketData를 가져옵니다.
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import par from "../../../src/assets/ico/parkingicon.png";
@@ -11,7 +11,6 @@ import vou from "../../../src/assets/ico/vouchericon.png";
 import res from "../../../src/assets/ico/restroomicon.png";
 import mor from "../../../src/assets/ico/moreicon.png";
 import loc from "../../../src/assets/ico/locationicon.png";
-
 import vou1 from "../../../src/assets/ico/온누리.png";
 
 const MarketMore = () => {
@@ -24,13 +23,7 @@ const MarketMore = () => {
 
   useEffect(() => {
     fetch(`${databaseURL}/전통시장데이터/${index}.json`)
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error('Something went wrong');
-        }
-      })
+      .then(response => response.json())
       .then(data => {
         if (data) {
           setMarket(data);
@@ -49,7 +42,7 @@ const MarketMore = () => {
     fetch(`${databaseURL}/전통시장데이터.json`)
       .then(response => response.json())
       .then(data => {
-        const nearby = Object.values(data).filter(market => market.지역명 === regionName && market.index !== index);
+        const nearby = Object.values(data).filter(m => m.지역명 === regionName && m.index !== index);
         setNearbyMarkets(nearby);
       })
       .catch(error => console.error('Error fetching nearby markets:', error));
@@ -64,14 +57,12 @@ const MarketMore = () => {
     }
   };
 
-  const renderMap = (marketName) => {
-    if (marketName === '춘천중앙시장') {
-      return <ChuncheonMarketMap />;
-    } else if (marketName === '간성시장') {
-      return <GanseongMarketMap />;
-    } else {
-      return <p>연동된 지도 없음.</p>;
+  const renderMap = () => {
+    const mapData = MarketData.find(md => md.title === market.시장명);
+    if (mapData) {
+      return <MarketMap market={mapData} />;
     }
+    return <p>연동된 지도 없음.</p>;
   };
 
   const scrollLeft = () => {
@@ -98,7 +89,7 @@ const MarketMore = () => {
                   )}
                 </div>
                 <div className="mkphoto__map">
-                  {renderMap(market.시장명)}
+                  {renderMap()}
                 </div>
               </div>
               <div className='texts'>

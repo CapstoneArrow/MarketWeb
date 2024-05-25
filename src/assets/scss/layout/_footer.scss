@@ -12,7 +12,7 @@
   padding: 0 20px; /* 좌우 패딩 설정 */
   display: flex;
   justify-content: center; /* 가운데 정렬 */
-  align-items: center; /* 수직 가운데 정렬 */
+  align-items: center; 
 }
 
 .footer__left,
@@ -23,8 +23,5 @@
 
 .footer__center {
   flex: 1;
-  text-align: center; /* 텍스트 가운데 정렬 */
+  text-align: center;
 }
-
-
-/* 필요에 따라 추가적인 스타일을 여기에 추가 */

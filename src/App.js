@@ -6,14 +6,14 @@ const Home = React.lazy(() => import('./pages/Home'));
 const Website = React.lazy(() => import('./pages/Mypage'));
 
 const Festival = React.lazy(() => import('./pages/Festival-Page/festival'));
-const Market = React.lazy(() => import('./pages/Market-Page/market'));
+const Market = React.lazy(() => import('./pages/Market-Page/Market.js'));
 
 const RegistMenufes = React.lazy(() => import('./pages/Register/RegistMenufes'));
 const RegistMenumk = React.lazy(() => import('./pages/Register/RegistMenumk'));
 
 const SearchResult = React.lazy(() => import('./components/page/SearchResult.js'));
 const Not = React.lazy(() => import('./pages/ETC/Not'));
-const LoginForm = React.lazy(() => import('./pages/Login Page/LoginForm'));
+const LoginForm = React.lazy(() => import('./pages/User/Login-Page/LoginForm.jsx'));
 const FestivalMore = React.lazy(() => import('./pages/Festival-Page/festivalmore.jsx'));
 const MarketMore = React.lazy(() => import('./pages/Market-Page/marketmore.jsx'));
 
