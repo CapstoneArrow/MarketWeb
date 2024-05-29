@@ -53,12 +53,17 @@
   ### ▶ 기타 페이지
   <br>
 
-  - 
-  
 
 
+## 구현 환경 및 언어
+<div align="center">
+  <br>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hui825&layout=compact"><br>
+</div>
 
-* 구현 환경 및 언어<br>
+
+<div align="center">
+   
   <br><img src = "https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
   <img src = "https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
   <img src = "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
@@ -66,8 +71,12 @@
   <img src = "https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
   <img src = "https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   <br>
+</div>
 
+
+
+ 
   
 
 
-<br> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hui825&layout=compact"><br><br>
+
