@@ -6,7 +6,7 @@ const Home = React.lazy(() => import('./pages/Home'));
 const Website = React.lazy(() => import('./pages/Mypage'));
 
 const Festival = React.lazy(() => import('./pages/Festival-Page/festival'));
-const Market = React.lazy(() => import('./pages/Market-Page/Market.js'));
+const Market = React.lazy(() => import('./pages/Market-Page/market.js'));
 
 const RegistMenufes = React.lazy(() => import('./pages/Register/RegistMenufes'));
 const RegistMenumk = React.lazy(() => import('./pages/Register/RegistMenumk'));
