@@ -4,7 +4,6 @@
 
 import Header from './Header-Footer/Header';
 import Search from '../page/Search';
-import Contents from '../page/Contents';
 
 
 

@@ -26,17 +26,17 @@ const RegistMenu = () => {
         <>
             <Header />
             <div className="regist-container">
-                <h1 className="regist-title">전통시장 정보 등록하기</h1>
+                <h1 className="regist-title">📝 전통시장 정보 등록</h1>
                 <div className="photo-upload">
-                    <label htmlFor="photo">사진 첨부</label>
+                    <label htmlFor="photo" className="title-box">사진 첨부</label>
                     <input type="file" id="photo" name="photo" />
                 </div>
                 <div className="festival-name">
-                    <label htmlFor="festival-name">시장 이름</label>
+                    <label htmlFor="festival-name" className="title-box">시장 이름</label>
                     <input type="text" id="festival-name" name="festival-name" placeholder="시장명을 입력하세요" />
                 </div>
                 <div className="address-section">
-                    <label htmlFor="road-address">도로명 주소</label>
+                    <label htmlFor="road-address" className="title-box">도로명 주소</label>
                     <input 
                         type="text" 
                         id="road-address" 
@@ -46,7 +46,7 @@ const RegistMenu = () => {
                         readOnly 
                         placeholder="도로명 주소를 검색하세요" 
                     />
-                    <label htmlFor="jibun-address">지번 주소</label>
+                    <label htmlFor="jibun-address" className="title-box">지번 주소</label>
                     <input 
                         type="text" 
                         id="jibun-address" 
@@ -56,7 +56,7 @@ const RegistMenu = () => {
                     />
                 </div>
                 <div className="festival-content">
-                    <label htmlFor="content">시장 내용</label>
+                    <label htmlFor="content" className="title-box">시장 내용</label>
                     <textarea id="content" name="content" placeholder="시장 내용을 입력하세요"></textarea>
                 </div>
                 <div className="submit-button">

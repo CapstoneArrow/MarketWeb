@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.login__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: linear-gradient(to bottom, transparent 30%, rgb(255, 210, 151) 30%, rgb(255, 210, 151) 70%, transparent 70%);
+}
+
 
 body {
     display: flex;

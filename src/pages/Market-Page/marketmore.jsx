@@ -27,7 +27,7 @@ const MarketMore = () => {
       .then(data => {
         if (data) {
           setMarket(data);
-          fetchNearbyMarkets(data.지역명); // Fetch nearby markets based on the same region
+          fetchNearbyMarkets(data.지역명); // 지역기반
         } else {
           console.log('No data available for this index');
         }

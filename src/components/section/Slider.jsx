@@ -46,6 +46,9 @@ const Slider = (props) => {
             modules={[Autoplay, Navigation, Pagination]}
             onSlideChange={handleSlideChange}
           >
+
+
+            {/* 슬라이드 이미지 첨부 */}
             <SwiperSlide>
               <img src={require("../../assets/images/imagetest/축제1.jpg")} alt="" />
             </SwiperSlide>
@@ -54,9 +57,6 @@ const Slider = (props) => {
             </SwiperSlide>
             <SwiperSlide>
               <img src={require("../../assets/images/imagetest/축제3.jpg")} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={require("../../assets/images/imagetest/축제4.jpg")} alt="" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={require("../../assets/images/imagetest/축제4.jpg")} alt="" />

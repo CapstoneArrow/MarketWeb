@@ -18,7 +18,7 @@
 
 .header__top {
   display: flex;
-  justify-content: center; /* 가운데 정렬 */
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 3;
@@ -35,15 +35,15 @@
 }
 
 .header__logo img {
-  height: 80px; /* 이미지 높이를 적절히 조정 */
-  width: auto; /* 가로 비율 유지 */
+  height: 80px; 
+  width: auto; 
 }
 
 .header__member {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 20px; /* 오른쪽에 위치하도록 설정 */
+  right: 20px;
 }
 
 .header__member a {

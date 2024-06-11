@@ -61,7 +61,7 @@ const MarketMap = ({ market }) => {
     };
 
     const script = document.createElement('script');
-    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_KAKAO_APP_KEY&autoload=false`;
+    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=d88ca8f1c2916960151011d64a2d5aa3&autoload=false`;
     script.async = true;
     script.onload = () => {
       if (window.kakao && window.kakao.maps) {
@@ -92,7 +92,7 @@ const MarketMap = ({ market }) => {
   }, [market]);
 
   return (
-    <div id="map" style={{ width: '100%', height: '400px' }}></div>
+    <div id="map" style={{ width: '600px', height: '400px' }}></div>
   );
 };
 
